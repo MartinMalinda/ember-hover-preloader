@@ -1,0 +1,23 @@
+<div class="ui container">
+
+  <h1 class="ui header">Ember Hover Preloader</h1>
+
+  <div class="ui form">
+    <div class="field">
+      <label>
+        Github User login:
+      </label>
+      {{input value=targetUserLogin}}
+    </div>
+  </div>
+
+  <div class="ui menu">
+    {{link-to "index" "index" class="item"}}
+    {{pre-link-to (concat 'pre-link-to ' targetUserLogin) 'user' targetUserLogin class="item"}}
+    {{pre-link-to 'pre-link-to user' 'user' (hash name="userModelPassedDirectlyName" login="1") class="item"}}
+  </div>
+  <pre>
+  </pre>
+  
+  {{outlet}}
+</div>

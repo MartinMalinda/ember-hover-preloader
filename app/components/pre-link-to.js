@@ -1,0 +1,1 @@
+export { default } from 'ember-hover-preloader/components/pre-link-to';
